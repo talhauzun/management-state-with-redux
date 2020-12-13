@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import SimpleCounter from './views/SimpleCounter';
+import TodoList from './views/TodoList';
+import NameCard from './views/NameCard';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    return (
+        <div className="App">
+            <main className="container">
+
+                {/* Please check /views/SimpleCounter.js for detail*/}
+                <SimpleCounter/>
+
+                <div className="divider"></div>
+
+                {/* Please check /views/NameCard.js for detail*/}
+                <NameCard/>
+
+                <div className="divider"></div>
+
+                {/* Please check /views/TodoList.js for detail*/}
+                <TodoList/>
+            </main>
+        </div>
+    );
 }
 
 export default App;
